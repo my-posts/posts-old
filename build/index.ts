@@ -66,6 +66,6 @@ async function copyFile(src: string, dest: string): Promise<void> {
       tocItems,
     });
   }
-  console.log("done.");
   await writeFile("out/index.json", JSON.stringify(posts));
+  console.log("done.");
 })();
