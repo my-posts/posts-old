@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "eliostruyf.vscode-front-matter",
+    "esbenp.prettier-vscode",
+    "unifiedjs.vscode-mdx",
+  ],
+}
