@@ -51,12 +51,6 @@ async function copyFile(src: string, dest: string): Promise<void> {
     console.log(`(${i + 1}/${postPaths.length}) compiling ${path}`);
     const inPath = join("src/posts", path, "README.mdx");
     const outPath = join("out/posts", path, "page.js");
-    if (existsSync(join("src/posts", path, "components"))) {
-      await copyFile(
-        join("src/posts", path, "components"),
-        join("out/posts", path, "components")
-      );
-    }
     if (existsSync(join("src/posts", path, "static"))) {
       await copyFile(
         join("src/posts", path, "static"),
